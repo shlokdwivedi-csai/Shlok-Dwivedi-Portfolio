@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="icon" type="image/png" sizes="32x32" href="logo.png">
+<link rel="apple-touch-icon" href="logo.png">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Shlok Dwivedi | Portfolio</title>
@@ -524,9 +526,38 @@ body.light-theme .hero-socials a:hover{
     gap:16px;
     flex-direction:row;
 }
+.search-icon{
+    background:transparent;
+    border:none;
+    padding:8px;
+    cursor:pointer;
+    color:var(--text-primary);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    transition:.25s;
+}
+
+.search-icon svg{
+    width:22px;
+    height:22px;
+    stroke-width:2;
+}
+
+.search-icon:hover{
+    color:var(--accent);
+    transform:scale(1.1);
+}
 </style>
 </head>
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+lucide.createIcons();
+</script>
 <body>
+ <button class="search-btn" aria-label="Search">
+    <i class="fa-solid fa-magnifying-glass"></i>
+</button>
     
 
 <nav class="topnav">
